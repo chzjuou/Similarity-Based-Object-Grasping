@@ -5,7 +5,7 @@ This repository contains the source code for the T-RO paper **"A Multi-Level Sim
 
 ## Environmental Configurations
 
-(Our test environment)  
+(Test environment)  
 Hardware: UR5e Robot Arm, Robotiq 2F-140 Gripper, RealSense Depth Camera D435  
 Software: Ryzen 7 5800H CPU, GeForce RTX 3060 GPU  
 OS: Ubuntu 20.04, Python 3.8, CUDA 11.6  
