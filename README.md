@@ -5,62 +5,70 @@ This repository contains the source code for the T-RO paper "A Multi-Level Simil
 
 ## Environmental Configurations
 
-(Our test environment)
-Hardware: UR5e Robot Arm, Robotiq 2F-140 Gripper, RealSense Depth Camera D435
-Software: Ryzen 7 5800H CPU, GeForce RTX 3060 GPU
-OS: Ubuntu 20.04, Python 3.8, CUDA 11.6
+(Our test environment)  
+Hardware: UR5e Robot Arm, Robotiq 2F-140 Gripper, RealSense Depth Camera D435  
+Software: Ryzen 7 5800H CPU, GeForce RTX 3060 GPU  
+OS: Ubuntu 20.04, Python 3.8, CUDA 11.6  
 
 - Detic:
-pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116 
+```
+pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
 (Please refer to [Pytorch Installation](https://pytorch.org/get-started/previous-versions/) to find a suitable version)
-
 cd detic/detectron2
 pip install -e .
 cd ..
 pip install -r requirements.txt
 mkdir models
 wget https://dl.fbaipublicfiles.com/detic/Detic_LCOCOI21k_CLIP_SwinB_896b32_4x_ft4x_max-size.pth -O models/Detic_LCOCOI21k_CLIP_SwinB_896b32_4x_ft4x_max-size.pth 
+```
 
 - SAM:
+```
 cd ../sam 
 wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth
 pip install -e .
+```
 
 - WRS:
+```
 cd ../wrs
 pip install -r requirements.txt
+```
 
 - IKFast: (cannot be complied in virtual environment)
+```
 sudo apt-get install libblas-dev liblapack-dev python3-dev
 cd ur_ikfast
 pip install -e .
+```
 
 - Other packages:
+```
 pip install pyrealsense2==2.50.0.3812 ur_rtde pymeshlab
-
+```
 
 ## Procedures
 
 - Step 1: Set initial parameters
-
+<br />
 Get your hand-eye calibration result as a 4x4 transformation matrix, including both rotation and translation components. Save the result to configs/calibration.txt.
-
+<br />
 Manually set the robot's IP address to 192.168.0.X via the UR panel (Settings → System → Network). On your PC, set the IP address to 192.168.0.Y under (Settings → Network → Wired → IPv4) with a netmask of 255.255.255.0. Install the External Control URCap on the panel, and update configs/robot_ip.txt with the robot’s IP address (192.168.0.X).
-
+<br />
 Configure a diagonally downward observation pose based on your operating environment. Save the corresponding joint angles to configs/observation.txt.
-
+<br />
 In the detic.sh script, replace $YOUR_USER_PASSWORD with your own sudo password.
 
 --------------------------------------------------
 
 - Step 2: Capture background image and pre-load segmentation models
-
+<br />
 Ensure the target object is not placed in the workplace, open a terminal and run "sh initialization.sh".
 
 --------------------------------------------------
 
 - Step 3: Matching, planning, and fine-tuning
-
+<br />
 Randomly place the target object in the workplace, open another terminal and run "sh start.sh".
 
 --------------------------------------------------
