@@ -47,7 +47,6 @@ pip install -e .
 pip install pyrealsense2==2.50.0.3812 ur_rtde pymeshlab
 ```
 
-
 ## Procedures
 
 - Step 1: Set initial parameters<br><br>
@@ -59,12 +58,18 @@ In the detic.sh script, replace $YOUR_USER_PASSWORD with your own sudo password.
 --------------------------------------------------
 
 - Step 2: Capture background image and pre-load segmentation models<br><br>
-Ensure the target object is not placed in the workplace, open a terminal and run "sh initialization.sh".
+Ensure the target object is not placed in the workplace, open a terminal and run
+```
+sh initialization.sh
+```
 
 --------------------------------------------------
 
 - Step 3: Matching, planning, and fine-tuning<br><br>
-Randomly place the target object in the workplace, open another terminal and run "sh start.sh".
+Randomly place the target object in the workplace, open another terminal and run
+```
+sh start.sh
+```
 
 --------------------------------------------------
 
