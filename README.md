@@ -78,7 +78,8 @@ sh start.sh
 
 - For each trial, repeat steps 2 and 3.
 <div align="center">
-<img width="80%" src="./media/wrs_planning.png"/> 
+<img width="40%" src="./media/observation.jpg"/>&nbsp;&nbsp;&nbsp;
+<img width="40%" src="./media/wrs_planning.png" alt="object png" />   
 </div>
 
 ## Reference
