@@ -1,7 +1,7 @@
 # Similarity-Based Object Grasping
 This repository contains the source code for the T-RO paper **"A Multi-Level Similarity Approach for Single-View Object Grasping: Matching, Planning, and Fine-Tuning"**. The current implementation demonstrates the effectiveness of our method on single-object scenarios. The code can be extended to support cluttered scenes. [[Paper](https://arxiv.org/abs/2507.11938)] [[Video](https://www.youtube.com/watch?v=dQw4w9WgXcQ)]
 <div align="center">
-<img width="80%" src="./media/demo.png" alt="demo.png png" /> 
+<img width="80%" src="./media/demo.png"/> 
 </div>
 
 # Installation
@@ -77,7 +77,9 @@ sh start.sh
 --------------------------------------------------
 
 - For each trial, repeat steps 2 and 3.<br><br>
-
+<div align="center">
+<img width="80%" src="./media/wrs_planning.png"/> 
+</div>
 
 ## Reference
 
