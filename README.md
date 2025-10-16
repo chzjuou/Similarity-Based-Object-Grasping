@@ -76,7 +76,7 @@ sh start.sh
 
 --------------------------------------------------
 
-- For each trial, repeat steps 2 and 3.<br><br>
+- For each trial, repeat steps 2 and 3.
 <div align="center">
 <img width="80%" src="./media/wrs_planning.png"/> 
 </div>
