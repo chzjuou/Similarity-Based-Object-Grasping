@@ -49,15 +49,14 @@ pip install pyrealsense2==2.50.0.3812 ur_rtde pymeshlab
 
 ## Procedures
 
-- Step 1: Set initial parameters
+- Step 1: Set initial parameters  
+Get your hand-eye calibration result as a 4x4 transformation matrix, including both rotation and translation components. Save the result to configs/calibration.txt.  
 <br />
-Get your hand-eye calibration result as a 4x4 transformation matrix, including both rotation and translation components. Save the result to configs/calibration.txt.
+Manually set the robot's IP address to 192.168.0.X via the UR panel (Settings → System → Network). On your PC, set the IP address to 192.168.0.Y under (Settings → Network → Wired → IPv4) with a netmask of 255.255.255.0. Install the External Control URCap on the panel, and update configs/robot_ip.txt with the robot’s IP address (192.168.0.X).  
 <br />
-Manually set the robot's IP address to 192.168.0.X via the UR panel (Settings → System → Network). On your PC, set the IP address to 192.168.0.Y under (Settings → Network → Wired → IPv4) with a netmask of 255.255.255.0. Install the External Control URCap on the panel, and update configs/robot_ip.txt with the robot’s IP address (192.168.0.X).
+Configure a diagonally downward observation pose based on your operating environment. Save the corresponding joint angles to configs/observation.txt.  
 <br />
-Configure a diagonally downward observation pose based on your operating environment. Save the corresponding joint angles to configs/observation.txt.
-<br />
-In the detic.sh script, replace $YOUR_USER_PASSWORD with your own sudo password.
+In the detic.sh script, replace $YOUR_USER_PASSWORD with your own sudo password.  
 
 --------------------------------------------------
 
