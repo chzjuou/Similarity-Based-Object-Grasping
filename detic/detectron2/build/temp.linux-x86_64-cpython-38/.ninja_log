@@ -1,0 +1,12 @@
+# ninja log v5
+1	714	1760425565	/home/ch/research/github/detic/detectron2/build/temp.linux-x86_64-cpython-38/home/ch/research/github/detic/detectron2/detectron2/layers/csrc/cuda_version.o	764a11fd331d5f18
+1	8632	1760425573	/home/ch/research/github/detic/detectron2/build/temp.linux-x86_64-cpython-38/home/ch/research/github/detic/detectron2/detectron2/layers/csrc/cocoeval/cocoeval.o	328feebfaf91ff0f
+0	9429	1760425574	/home/ch/research/github/detic/detectron2/build/temp.linux-x86_64-cpython-38/home/ch/research/github/detic/detectron2/detectron2/layers/csrc/box_iou_rotated/box_iou_rotated_cpu.o	47654cba9a1a8716
+1	10252	1760425574	/home/ch/research/github/detic/detectron2/build/temp.linux-x86_64-cpython-38/home/ch/research/github/detic/detectron2/detectron2/layers/csrc/nms_rotated/nms_rotated_cpu.o	135448bf4204353a
+0	12587	1760425577	/home/ch/research/github/detic/detectron2/build/temp.linux-x86_64-cpython-38/home/ch/research/github/detic/detectron2/detectron2/layers/csrc/ROIAlignRotated/ROIAlignRotated_cpu.o	5cdb02b4dd58ad94
+0	19251	1760425583	/home/ch/research/github/detic/detectron2/build/temp.linux-x86_64-cpython-38/home/ch/research/github/detic/detectron2/detectron2/layers/csrc/box_iou_rotated/box_iou_rotated_cuda.o	9a94832c394338c3
+1	19647	1760425584	/home/ch/research/github/detic/detectron2/build/temp.linux-x86_64-cpython-38/home/ch/research/github/detic/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda_kernel.o	6186f8457a028a3d
+0	20301	1760425585	/home/ch/research/github/detic/detectron2/build/temp.linux-x86_64-cpython-38/home/ch/research/github/detic/detectron2/detectron2/layers/csrc/ROIAlignRotated/ROIAlignRotated_cuda.o	4a911e7605cea2dd
+1	21430	1760425586	/home/ch/research/github/detic/detectron2/build/temp.linux-x86_64-cpython-38/home/ch/research/github/detic/detectron2/detectron2/layers/csrc/deformable/deform_conv_cuda.o	e9c90ee91e5793c5
+1	22017	1760425586	/home/ch/research/github/detic/detectron2/build/temp.linux-x86_64-cpython-38/home/ch/research/github/detic/detectron2/detectron2/layers/csrc/nms_rotated/nms_rotated_cuda.o	ea6fdeb529b82b01
+2	28520	1760425593	/home/ch/research/github/detic/detectron2/build/temp.linux-x86_64-cpython-38/home/ch/research/github/detic/detectron2/detectron2/layers/csrc/vision.o	364b769a8ea80efe
