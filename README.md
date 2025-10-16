@@ -53,23 +53,21 @@ pip install pyrealsense2==2.50.0.3812 ur_rtde pymeshlab
 Get your hand-eye calibration result as a 4x4 transformation matrix, including both rotation and translation components. Save the result to configs/calibration.txt.<br><br>
 Manually set the robot's IP address to 192.168.0.X via the UR panel (Settings → System → Network). On your PC, set the IP address to 192.168.0.Y under (Settings → Network → Wired → IPv4) with a netmask of 255.255.255.0. Install the External Control URCap on the panel, and update configs/robot_ip.txt with the robot’s IP address (192.168.0.X).<br><br>
 Configure a diagonally downward observation pose based on your operating environment. Save the corresponding joint angles to configs/observation.txt.<br><br>
-In the detic.sh script, replace $YOUR_USER_PASSWORD with your own sudo password.<br><br>
+In the detic.sh script, replace $YOUR_USER_PASSWORD with your own sudo password.
 
 --------------------------------------------------
 
-- Step 2: Capture background image and pre-load segmentation models
-<br />
+- Step 2: Capture background image and pre-load segmentation models<br><br>
 Ensure the target object is not placed in the workplace, open a terminal and run "sh initialization.sh".
 
 --------------------------------------------------
 
-- Step 3: Matching, planning, and fine-tuning
-<br />
+- Step 3: Matching, planning, and fine-tuning<br><br>
 Randomly place the target object in the workplace, open another terminal and run "sh start.sh".
 
 --------------------------------------------------
 
-- For each trial, repeat steps 2 and 3.
+- For each trial, repeat steps 2 and 3.<br><br>
 
 
 ## Reference
